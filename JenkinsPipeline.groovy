@@ -9,7 +9,7 @@ pipeline {
             steps {
                 checkout([$class           : 'GitSCM', branches: [[name: '*/master']],
                           userRemoteConfigs: [[credentialsId: 'f91cb269-b472-479d-8359-2e577834a69a',
-                                               url: 'http://uugit.uupt.com/TestGroup/teststatistics-app.git']]])
+                                               url: 'https://github.com/Glsearl/jacocoDemo.git']]])
             }
         }
         stage('maven clean compile') {
